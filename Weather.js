@@ -86,7 +86,7 @@ export default function Weather({temp, condition}){
             <Ionicons name={weatherOptions[condition].iconName } size={92} color="white"/>
             <Text style={styles.temp}>{temp} ℃</Text>
         </View>
-        <View style={styles.halfContainer}>
+        <View style={styles.textContainer}>
             <Text style={styles.title}>{weatherOptions[condition].title}</Text>
             <Text style={styles.subtitle}>{weatherOptions[condition].subtitle}</Text>
         </View>
@@ -147,6 +147,12 @@ const styles = StyleSheet.create({
         textTransform: "capitalize",
         letterSpacing: 1
 
+    },
+    textContainer: {
+        marginBottom: 200,
+        paddingHorizontal: 40,
+        justifyContent: "center",
+        flex: 1
     }
 
 })
